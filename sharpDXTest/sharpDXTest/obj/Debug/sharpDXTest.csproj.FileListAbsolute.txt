@@ -10,3 +10,15 @@ C:\Users\CE\Desktop\SharpDXSample\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.
 C:\Users\CE\Desktop\SharpDXSample\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.csproj.CoreCompileInputs.cache
 C:\Users\CE\Desktop\SharpDXSample\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.dll
 C:\Users\CE\Desktop\SharpDXSample\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.pdb
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\sharpDXTest.dll
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\sharpDXTest.pdb
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\SharpDX.Direct2D1.dll
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\SharpDX.dll
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\SharpDX.DXGI.dll
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\SharpDX.xml
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\SharpDX.Direct2D1.xml
+C:\sharpdxtest\sharpDXTest\sharpDXTest\bin\Debug\SharpDX.DXGI.xml
+C:\sharpdxtest\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.csprojResolveAssemblyReference.cache
+C:\sharpdxtest\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.csproj.CoreCompileInputs.cache
+C:\sharpdxtest\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.dll
+C:\sharpdxtest\sharpDXTest\sharpDXTest\obj\Debug\sharpDXTest.pdb

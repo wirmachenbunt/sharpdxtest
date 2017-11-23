@@ -3,6 +3,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\vvvv\vvvv_50beta35.8_x64\vvvv.exe</StartProgram>
-    <StartArguments>"C:\Users\CE\Desktop\SharpDXSample\sharpDX_Direct2D.v4p"</StartArguments>
+    <StartArguments>"C:\sharpdxtest\sharpDX_Direct2D.v4p"</StartArguments>
   </PropertyGroup>
 </Project>

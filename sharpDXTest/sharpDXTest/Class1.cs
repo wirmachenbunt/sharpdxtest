@@ -15,6 +15,7 @@ using SharpDX.DXGI;
 using SharpDX;
 
 using VVVV.Core.Logging;
+using SharpDX.Mathematics.Interop;
 #endregion usings
 
 namespace VVVV.Nodes
@@ -34,6 +35,12 @@ namespace VVVV.Nodes
         [Import()]
         public ILogger FLogger;
 
+        [Input("Play")]
+        public IDiffSpread<bool> FPlay;
+
+        [Output("Clips")]
+        public ISpread<bool> ClipsOut;
+
         public SharpDX.Direct2D1.Factory Factory2D { get; private set; }
         public SharpDX.DirectWrite.Factory FactoryDWrite { get; private set; }
         public WindowRenderTarget RenderTarget2D { get; private set; }
@@ -52,19 +59,25 @@ namespace VVVV.Nodes
 
         void InitializeComponent()
         {
+            
+
+
+
             Factory2D = new SharpDX.Direct2D1.Factory();
             FactoryDWrite = new SharpDX.DirectWrite.Factory();
             HwndRenderTargetProperties properties = new HwndRenderTargetProperties();
             properties.Hwnd = this.Handle;
-            properties.PixelSize = new SharpDX.Size2(1, 1);
-            properties.PresentOptions = PresentOptions.None;
+            properties.PixelSize = new SharpDX.Size2(this.ClientSize.Width, this.ClientSize.Height);
+            properties.PresentOptions = PresentOptions.RetainContents;
+            
+           
 
-            RenderTarget2D = new WindowRenderTarget(Factory2D, new RenderTargetProperties(new PixelFormat(Format.Unknown, SharpDX.Direct2D1.AlphaMode.Premultiplied)), properties);
+            RenderTarget2D = new WindowRenderTarget(Factory2D, new RenderTargetProperties(new PixelFormat(Format.B8G8R8A8_UNorm, SharpDX.Direct2D1.AlphaMode.Premultiplied)), properties);
 
             RenderTarget2D.AntialiasMode = AntialiasMode.PerPrimitive;
 
-
-            //SceneColorBrush = new SolidColorBrush(RenderTarget2D, System.Drawing.Color.White);
+            
+            SceneColorBrush = new SolidColorBrush(RenderTarget2D, new RawColor4(1.0f, 0.0f, 0.0f, 1.0f));
             //NOT WORKING
         }
 
@@ -77,9 +90,14 @@ namespace VVVV.Nodes
         {
             RenderTarget2D.BeginDraw();
 
-            //not drawing anything yet
+            ClipsOut[0] = FPlay[0];
 
-            RenderTarget2D.EndDraw();
+
+            RenderTarget2D.Clear(new RawColor4(1.0f, 0.0f, 0.0f, 1.0f));
+
+            try { RenderTarget2D.EndDraw(); }
+            catch { }
+            
 
         }
     }
