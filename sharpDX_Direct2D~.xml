@@ -1,0 +1,15 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\CE\Desktop\SharpDXSample\sharpDX_Direct2D.v4p" systemname="sharpDX_Direct2D" filename="C:\Users\CE\Desktop\SharpDXSample\sharpDX_Direct2D.v4p">
+   <BOUNDS type="Window" left="7380" top="10260" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="sharpDXTest (GUI)" filename="sharpDXTest\sharpDXTest\bin\Debug\sharpDXTest.dll" nodename="sharpDXTest (GUI)" componentmode="InAWindow" id="3">
+   <BOUNDS type="Node" left="3990" top="1710" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3990" top="1710" width="3000" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9315" top="5475" width="8085" height="4500">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
